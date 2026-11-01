@@ -1,0 +1,39 @@
+.dashboard-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card-bienvenida {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.5rem;
+  border-left: 5px solid var(--color-primario, #600683);
+}
+
+.card-bienvenida h3 {
+  margin-top: 0;
+  color: var(--color-primario, #600683);
+}
+
+.fecha-info {
+  font-size: 0.85rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+.btn-logout {
+  background-color: #d32f2f;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-logout:hover {
+  opacity: 0.9;
+}

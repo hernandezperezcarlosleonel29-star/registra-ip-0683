@@ -1,0 +1,63 @@
+.layout-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header-principal {
+  background-color: var(--color-primario, #600683); /* Usa tu color primario */
+  color: #ffffff;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-principal h1 {
+  margin: 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.subtitulo {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer-principal {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.85rem;
+}
+
+/* ==========================================
+   MEDIA QUERY PARA PANTALLAS MENORES A 600px 
+   (Requerimiento de la práctica)[cite: 4]
+   ========================================== */
+@media (max-width: 600px) {
+  .header-principal {
+    padding: 1rem;
+  }
+
+  .header-principal h1 {
+    font-size: 1.5rem; /* Reduce el tamaño del título en móviles */
+  }
+
+  .subtitulo {
+    font-size: 0.8rem;
+  }
+
+  .main-content {
+    padding: 1rem; /* Reduce los márgenes para aprovechar pantallas pequeñas */
+  }
+}
