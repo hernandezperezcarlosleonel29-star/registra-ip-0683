@@ -5,12 +5,15 @@ import Registro from './pages/Registro';
 import Dashboard from './pages/Dashboard';
 import RutaProtegida from './components/RutaProtegida';
 import './App.css';
-
+import RegistrarObra from './pages/RegistrarObra';
 function App() {
   return (
     <Router>
       <Layout>
         <Routes>
+
+<Route path="/registrar" element={<RegistrarObra />} />
+
           {/* Ruta pública para el registro */}
           <Route path="/" element={<Registro />} />
 
@@ -22,6 +25,7 @@ function App() {
                 <Dashboard />
               </RutaProtegida>
             } 
+            
           />
         </Routes>
       </Layout>
